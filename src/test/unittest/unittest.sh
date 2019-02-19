@@ -64,14 +64,14 @@ if [ -z "${UNITTEST_NAME}" ]; then
 fi
 
 # defaults
-[ "$UNITTEST_LOG_LEVEL" ] || UNITTEST_LOG_LEVEL=2
+[ "$UNITTEST_LOG_LEVEL" ] || UNITTEST_LOG_LEVEL=3
 [ "$GREP" ] || GREP="grep -a"
 [ "$TEST" ] || TEST=check
-[ "$FS" ] || FS=any
+[ "$FS" ] || FS=pmem
 [ "$BUILD" ] || BUILD=debug
-[ "$CHECK_TYPE" ] || CHECK_TYPE=auto
+[ "$CHECK_TYPE" ] || CHECK_TYPE=none
 [ "$CHECK_POOL" ] || CHECK_POOL=0
-[ "$VERBOSE" ] || VERBOSE=0
+[ "$VERBOSE" ] || VERBOSE=1
 [ -n "${SUFFIX+x}" ] || SUFFIX="😘⠏⠍⠙⠅ɗPMDKӜ⥺🙋"
 
 export UNITTEST_LOG_LEVEL GREP TEST FS BUILD CHECK_TYPE CHECK_POOL VERBOSE SUFFIX
@@ -3387,10 +3387,12 @@ function require_pmreorder()
 function pmreorder_run_tool()
 {
 	rm -f pmreorder$UNITTEST_NUM.log
+	log_level=debug
 	disable_exit_on_error
 	LD_LIBRARY_PATH=$TEST_LD_LIBRARY_PATH $PYTHON_EXE $PMREORDER \
 		-l store_log$UNITTEST_NUM.log \
 		-o pmreorder$UNITTEST_NUM.log \
+		-e $log_level \
 		-r $1 \
 		-x $2 \
 		-p "$3"

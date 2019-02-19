@@ -286,6 +286,10 @@ class ReplayingState(State):
         """
         super(ReplayingState, self).__init__(context)
         self._ops_list = in_ops_list
+        self._context.logger.debug("\n\nIn Replay State, store ops since last FLUSH : ")
+        for store_op in in_ops_list:
+            self._context.logger.debug(str(store_op))
+
 
     def next(self, in_op):
         """
@@ -317,11 +321,17 @@ class ReplayingState(State):
         if self._context.test_on_barrier:
             for seq in self._context.reorder_engine.generate_sequence(
                                                               flushed_stores):
+                
+                self._context.logger.debug("\n\n-----Testing the following sequence-----")
+                for store_in_seq in seq:    
+                    self._context.logger.debug(str(store_in_seq))
+                
                 for op in seq:
                     # do stores
                     self._context.file_handler.do_store(op)
                 # check consistency of all files
                 try:
+                    self._context.logger.debug("\n----Checking consistency----")
                     self._context.file_handler.check_consistency()
                 except InconsistentFileException as e:
                     consistency = False

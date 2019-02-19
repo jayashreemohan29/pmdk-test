@@ -63,6 +63,10 @@ class OpsContext:
         # TODO reading the whole file at once is rather naive
         # change in the future
         self._operations = open(log_file).read().split("|")
+        logger.debug("\n-------Initializing operations begin-------")
+        for op in self._operations:
+            logger.debug(str(op)) 
+        logger.debug("\n-------Initializing operations end-------")
         engine = reorderengines.get_engine(arg_engine)
         self.reorder_engine = engine
         self.test_on_barrier = engine.test_on_barrier
