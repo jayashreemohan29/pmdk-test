@@ -69,6 +69,7 @@ struct fields {
 static void
 write_fields(struct fields *fieldsp)
 {
+	VALGRIND_EMIT_LOG("WORKLOAD.BEGIN");
 	VALGRIND_EMIT_LOG("FIELDS_PACK_TWO.BEGIN");
 
 	VALGRIND_EMIT_LOG("FIELDS_PACK_ONE.BEGIN");
@@ -94,6 +95,7 @@ write_fields(struct fields *fieldsp)
 	fieldsp->k = 1;
 	fieldsp->l = 1;
 	pmem_persist(&fieldsp->i, sizeof(int) * 4);
+	VALGRIND_EMIT_LOG("WORKLOAD.END");
 }
 
 /*

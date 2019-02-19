@@ -1,0 +1,117 @@
+DEBUG:pmreorder:
+-------Initializing operations begin-------
+DEBUG:pmreorder:==25075== START
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:REGISTER_FILE;/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_stack0/testfile;0x6200000;0x400000;0x0
+DEBUG:pmreorder:STORE;0x6200000;0x0;0x8;0x4C84F99: memset_mov_sse2_clflush (emmintrin.h:712);0x4C39B5D: memset_nodrain_sse2_clflush (init.c:169)
+DEBUG:pmreorder:STORE;0x6200008;0x0;0x8;0x4C84F99: memset_mov_sse2_clflush (emmintrin.h:712);0x4C39B5D: memset_nodrain_sse2_clflush (init.c:169)
+DEBUG:pmreorder:STORE;0x6200010;0x0;0x8;0x4C84FCC: memset_mov_sse2_clflush (emmintrin.h:712);0x4C39B5D: memset_nodrain_sse2_clflush (init.c:169)
+DEBUG:pmreorder:STORE;0x6200018;0x0;0x8;0x4C84FCC: memset_mov_sse2_clflush (emmintrin.h:712);0x4C39B5D: memset_nodrain_sse2_clflush (init.c:169)
+DEBUG:pmreorder:STORE;0x6200020;0x0;0x8;0x4C85009: memset_mov_sse2_clflush (emmintrin.h:712);0x4C39B5D: memset_nodrain_sse2_clflush (init.c:169)
+DEBUG:pmreorder:STORE;0x6200028;0x0;0x8;0x4C85009: memset_mov_sse2_clflush (emmintrin.h:712);0x4C39B5D: memset_nodrain_sse2_clflush (init.c:169)
+DEBUG:pmreorder:FLUSH;0x6200000;0x40
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:CHECKPOINT_ONE.BEGIN
+DEBUG:pmreorder:STORE;0x6200000;0x1;0x4;0x404B17: write_fields (pmreorder_stack.c:76);0x404EEC: main (pmreorder_stack.c:142)
+DEBUG:pmreorder:STORE;0x6200004;0x1;0x4;0x404B24: write_fields (pmreorder_stack.c:77);0x404EEC: main (pmreorder_stack.c:142)
+DEBUG:pmreorder:STORE;0x6200008;0x1;0x4;0x404B32: write_fields (pmreorder_stack.c:78);0x404EEC: main (pmreorder_stack.c:142)
+DEBUG:pmreorder:STORE;0x620000c;0x1;0x4;0x404B40: write_fields (pmreorder_stack.c:79);0x404EEC: main (pmreorder_stack.c:142)
+DEBUG:pmreorder:FLUSH;0x6200000;0x40
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:CHECKPOINT_ONE.END
+DEBUG:pmreorder:STORE;0x6200010;0x1;0x4;0x404BC9: write_fields (pmreorder_stack.c:84);0x404EEC: main (pmreorder_stack.c:142)
+DEBUG:pmreorder:STORE;0x6200014;0x1;0x4;0x404BD7: write_fields (pmreorder_stack.c:85);0x404EEC: main (pmreorder_stack.c:142)
+DEBUG:pmreorder:STORE;0x6200018;0x1;0x4;0x404BE5: write_fields (pmreorder_stack.c:86);0x404EEC: main (pmreorder_stack.c:142)
+DEBUG:pmreorder:STORE;0x620001c;0x1;0x4;0x404BF3: write_fields (pmreorder_stack.c:87);0x404EEC: main (pmreorder_stack.c:142)
+DEBUG:pmreorder:FLUSH;0x6200000;0x40
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:STORE;0x6200020;0x1;0x4;0x404C19: write_fields (pmreorder_stack.c:92);0x404EEC: main (pmreorder_stack.c:142)
+DEBUG:pmreorder:STORE;0x6200024;0x1;0x4;0x404C27: write_fields (pmreorder_stack.c:93);0x404EEC: main (pmreorder_stack.c:142)
+DEBUG:pmreorder:STORE;0x6200028;0x1;0x4;0x404C35: write_fields (pmreorder_stack.c:94);0x404EEC: main (pmreorder_stack.c:142)
+DEBUG:pmreorder:STORE;0x620002c;0x1;0x4;0x404C43: write_fields (pmreorder_stack.c:95);0x404EEC: main (pmreorder_stack.c:142)
+DEBUG:pmreorder:FLUSH;0x6200000;0x40
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:STOP
+
+DEBUG:pmreorder:
+-------Initializing operations end-------
+DEBUG:pmreorder:
+
+In Replay State, total store ops so far : 
+DEBUG:pmreorder:addr: 0x6200000 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6200008 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6200010 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6200018 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6200020 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6200028 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:
+
+In Replay State, total store ops so far : 
+DEBUG:pmreorder:addr: 0x6200000 size 4 value b'\x01\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6200004 size 4 value b'\x01\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6200008 size 4 value b'\x01\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x620000c size 4 value b'\x01\x00\x00\x00'
+DEBUG:pmreorder:
+
+-----Testing the following sequence-----
+DEBUG:pmreorder:addr: 0x6200000 size 4 value b'\x01\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6200004 size 4 value b'\x01\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6200008 size 4 value b'\x01\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x620000c size 4 value b'\x01\x00\x00\x00'
+DEBUG:pmreorder:
+----Checking consistency----
+WARNING:pmreorder:File /mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_stack0/testfile inconsistent
+WARNING:pmreorder:Call trace:
+Store [0]:
+    by	0x404B17: write_fields (pmreorder_stack.c:76)
+    by	0x404EEC: main (pmreorder_stack.c:142)
+Store [1]:
+    by	0x404B24: write_fields (pmreorder_stack.c:77)
+    by	0x404EEC: main (pmreorder_stack.c:142)
+Store [2]:
+    by	0x404B32: write_fields (pmreorder_stack.c:78)
+    by	0x404EEC: main (pmreorder_stack.c:142)
+Store [3]:
+    by	0x404B40: write_fields (pmreorder_stack.c:79)
+    by	0x404EEC: main (pmreorder_stack.c:142)
+
+DEBUG:pmreorder:
+
+In Replay State, total store ops so far : 
+DEBUG:pmreorder:addr: 0x6200010 size 4 value b'\x01\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6200014 size 4 value b'\x01\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6200018 size 4 value b'\x01\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x620001c size 4 value b'\x01\x00\x00\x00'
+DEBUG:pmreorder:
+
+In Replay State, total store ops so far : 
+DEBUG:pmreorder:addr: 0x6200020 size 4 value b'\x01\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6200024 size 4 value b'\x01\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6200028 size 4 value b'\x01\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x620002c size 4 value b'\x01\x00\x00\x00'

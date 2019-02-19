@@ -1,0 +1,191 @@
+<libpmemobj>: <1> [out.c:236 out_init] pid 11422: program: /home/jayashree/projects/pmdk/src/test/pmreorder_nested/test_nested_tx
+<libpmemobj>: <1> [out.c:238 out_init] libpmemobj version 2.4
+<libpmemobj>: <1> [out.c:242 out_init] src version: 1.5+git232.g3982020
+<libpmemobj>: <1> [out.c:250 out_init] compiled with support for Valgrind pmemcheck
+<libpmemobj>: <1> [out.c:255 out_init] compiled with support for Valgrind helgrind
+<libpmemobj>: <1> [out.c:260 out_init] compiled with support for Valgrind memcheck
+<libpmemobj>: <1> [out.c:265 out_init] compiled with support for Valgrind drd
+<libpmemobj>: <1> [out.c:270 out_init] compiled with support for shutdown state
+<libpmemobj>: <3> [mmap.c:66 util_mmap_init] 
+<libpmemobj>: <3> [libpmemobj.c:52 libpmemobj_init] 
+<libpmemobj>: <3> [obj.c:280 obj_init] 
+<libpmemobj>: <3> [obj.c:183 obj_ctl_init_and_load] pop (nil)
+<libpmemobj>: <3> [set.c:123 util_remote_init] 
+<libpmemobj>: <3> [obj.c:2043 pmemobj_check] Hello again! path /mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile layout nested_test
+<libpmemobj>: <3> [obj.c:1998 pmemobj_checkU] Hello! path /mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile layout nested_test
+<libpmemobj>: <3> [obj.c:1722 obj_open_common] path /mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile layout nested_test flags 0x1
+<libpmemobj>: <3> [obj.c:1300 obj_get_nlanes] 
+<libpmemobj>: <3> [set.c:3888 util_pool_open] setp 0x7fff1dc60478 path /mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile minpartsize 2097152 attr 0x7f653d9ed780 nlanes 0x7fff1dc60470 addr (nil) flags 0x1 
+<libpmemobj>: <3> [set.c:2108 util_poolset_create_set] setp 0x7fff1dc60478 path /mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile poolsize 0 minsize 0
+<libpmemobj>: <3> [file.c:223 util_file_get_type] path "/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile"
+<libpmemobj>: <3> [file.c:131 util_file_exists] path "/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile"
+<libpmemobj>: <4> [file.c:165 get_file_type_internal] not a character device
+<libpmemobj>: <3> [file.c:551 util_file_open] path "/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile" size 0x7fff1dc60368 minsize 0 flags 0
+<libpmemobj>: <3> [file.c:258 util_file_get_size] path "/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile"
+<libpmemobj>: <3> [file.c:223 util_file_get_type] path "/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile"
+<libpmemobj>: <3> [file.c:131 util_file_exists] path "/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile"
+<libpmemobj>: <4> [file.c:165 get_file_type_internal] not a character device
+<libpmemobj>: <4> [file.c:276 util_file_get_size] file length 8388608
+<libpmemobj>: <4> [file.c:591 util_file_open] actual file size 8388608
+<libpmemobj>: <4> [set.c:2151 util_poolset_create_set] not a pool set header
+<libpmemobj>: <3> [set.c:1700 util_poolset_single] path /mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile filesize 8388608 create 0
+<libpmemobj>: <3> [file.c:223 util_file_get_type] path "/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile"
+<libpmemobj>: <3> [file.c:131 util_file_exists] path "/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile"
+<libpmemobj>: <4> [file.c:165 get_file_type_internal] not a character device
+<libpmemobj>: <3> [set.c:3834 util_read_compat_features] set 0x1781bb0 pcompat_features 0x7fff1dc603d0
+<libpmemobj>: <3> [set.c:1778 util_part_open] part 0x1781cb8 minsize 0 create 0
+<libpmemobj>: <3> [file.c:131 util_file_exists] path "/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile"
+<libpmemobj>: <3> [file.c:551 util_file_open] path "/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile" size 0x7fff1dc60340 minsize 0 flags 2
+<libpmemobj>: <3> [file.c:258 util_file_get_size] path "/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile"
+<libpmemobj>: <3> [file.c:223 util_file_get_type] path "/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile"
+<libpmemobj>: <3> [file.c:131 util_file_exists] path "/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile"
+<libpmemobj>: <4> [file.c:165 get_file_type_internal] not a character device
+<libpmemobj>: <4> [file.c:276 util_file_get_size] file length 8388608
+<libpmemobj>: <4> [file.c:591 util_file_open] actual file size 8388608
+<libpmemobj>: <3> [set.c:363 util_map_hdr] part 0x1781cb8 flags 1
+<libpmemobj>: <4> [mmap_posix.c:216 util_map_sync] mmap with MAP_SYNC not supported
+<libpmemobj>: <4> [set.c:422 util_unmap_hdr] munmap: addr 0x7f653de24000 size 4096
+<libpmemobj>: <3> [set.c:1823 util_part_fdclose] part 0x1781cb8
+<libpmemobj>: <3> [set.c:1993 util_poolset_files_local] set 0x1781bb0 minpartsize 2097152 create 0
+<libpmemobj>: <3> [set.c:1778 util_part_open] part 0x1781cb8 minsize 2097152 create 0
+<libpmemobj>: <3> [file.c:131 util_file_exists] path "/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile"
+<libpmemobj>: <3> [file.c:551 util_file_open] path "/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile" size 0x7fff1dc60340 minsize 2097152 flags 2
+<libpmemobj>: <3> [file.c:258 util_file_get_size] path "/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile"
+<libpmemobj>: <3> [file.c:223 util_file_get_type] path "/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile"
+<libpmemobj>: <3> [file.c:131 util_file_exists] path "/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile"
+<libpmemobj>: <4> [file.c:165 get_file_type_internal] not a character device
+<libpmemobj>: <4> [file.c:276 util_file_get_size] file length 8388608
+<libpmemobj>: <4> [file.c:591 util_file_open] actual file size 8388608
+<libpmemobj>: <3> [set.c:3531 util_replica_open] set 0x1781bb0 repidx 0 flags 16386
+<libpmemobj>: <3> [set.c:3351 util_replica_open_local] set 0x1781bb0 repidx 0 flags 16386
+<libpmemobj>: <3> [mmap_posix.c:153 util_map_hint] len 8388608 req_align 0
+<libpmemobj>: <4> [mmap_posix.c:176 util_map_hint] system choice 0x7f653baaf000
+<libpmemobj>: <4> [mmap_posix.c:181 util_map_hint] hint 0x7f653bc00000
+<libpmemobj>: <3> [set.c:439 util_map_part] part 0x1781cb8 addr 0x7f653bc00000 size 8388608 offset 0 flags 16386
+<libpmemobj>: <3> [set.c:363 util_map_hdr] part 0x1781cb8 flags 16386
+<libpmemobj>: <3> [set.c:1129 util_replica_check_map_sync] set 0x1781bb0 repidx 0
+<libpmemobj>: <3> [set.c:3472 util_replica_open_local] replica addr 0x7f653bc00000
+<libpmemobj>: <3> [set.c:3669 util_replica_check] set 0x1781bb0 attr 0x7f653d9ed780
+<libpmemobj>: <3> [set.c:2323 util_header_check] set 0x1781bb0 repidx 0 partidx 0 attr 0x7f653d9ed780
+<libpmemobj>: <3> [pool_hdr.c:183 util_feature_check] hdrp 0x7fff1dc5f2e0 features {incompat 0x7 ro_compat 0 compat 0}
+<libpmemobj>: <3> [set.c:2389 util_header_check] valid header, signature "PMEMOBJ"
+<libpmemobj>: <3> [set.c:2197 util_poolset_check_header_options] set 0x1781bb0, incompat 0x2
+<libpmemobj>: <3> [set.c:3644 util_unmap_all_hdrs] set 0x1781bb0
+<libpmemobj>: <4> [set.c:422 util_unmap_hdr] munmap: addr 0x7f653de24000 size 4096
+<libpmemobj>: <3> [obj.c:1017 obj_replica_init_local] rep 0x7f653bc00000 is_pmem 1 resvsize 8388608
+<libpmemobj>: <3> [obj.c:962 obj_descr_check] pop 0x7f653bc00000 layout nested_test poolsize 8388608
+<libpmemobj>: <3> [obj.c:1196 obj_runtime_init] pop 0x7f653bc00000 rdonly 0 boot 0
+<libpmemobj>: <3> [obj.c:183 obj_ctl_init_and_load] pop 0x7f653bc00000
+<libpmemobj>: <3> [mmap.c:277 util_range_none] addr 0x7f653bc00000 len 4096
+<libpmemobj>: <3> [set.c:705 util_poolset_fdclose_always] set 0x1781bb0
+<libpmemobj>: <3> [set.c:1823 util_part_fdclose] part 0x1781cb8
+<libpmemobj>: <3> [obj.c:1790 obj_open_common] pop 0x7f653bc00000
+<libpmemobj>: <3> [obj.c:1579 obj_check_basic] pop 0x7f653bc00000 mapped_size 8388608
+<libpmemobj>: <3> [obj.c:1479 obj_check_basic_local] pop 0x7f653bc00000 mapped_size 8388608
+<libpmemobj>: <3> [obj.c:853 obj_runtime_init_common] pop 0x7f653bc00000
+<libpmemobj>: <4> [heap.c:963 heap_get_procs] creating 4 arenas
+<libpmemobj>: <3> [obj.c:1932 obj_pool_cleanup] pop 0x7f653bc00000
+<libpmemobj>: <3> [obj.c:1891 obj_pool_lock_cleanup] pop 0x7f653bc00000
+<libpmemobj>: <3> [obj.c:1865 obj_replicas_cleanup] set 0x1781bb0
+<libpmemobj>: <3> [set.c:628 util_poolset_close] set 0x1781bb0 del 0
+<libpmemobj>: <3> [set.c:2871 util_replica_close] set 0x1781bb0 repidx 0
+<libpmemobj>: <3> [set.c:482 util_unmap_part] part 0x1781cb8
+<libpmemobj>: <4> [set.c:485 util_unmap_part] munmap: addr 0x7f653bc00000 size 8388608
+<libpmemobj>: <3> [set.c:520 util_poolset_free] set 0x1781bb0
+<libpmemobj>: <4> [obj.c:2031 pmemobj_checkU] pool consistency check OK
+<libpmemobj>: <3> [obj.c:1813 pmemobj_openU] path /mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile layout nested_test
+<libpmemobj>: <3> [obj.c:1722 obj_open_common] path /mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile layout nested_test flags 0x0
+<libpmemobj>: <3> [obj.c:1300 obj_get_nlanes] 
+<libpmemobj>: <3> [set.c:3888 util_pool_open] setp 0x7fff1dc60498 path /mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile minpartsize 2097152 attr 0x7f653d9ed780 nlanes 0x7fff1dc60490 addr (nil) flags 0x0 
+<libpmemobj>: <3> [set.c:2108 util_poolset_create_set] setp 0x7fff1dc60498 path /mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile poolsize 0 minsize 0
+<libpmemobj>: <3> [file.c:223 util_file_get_type] path "/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile"
+<libpmemobj>: <3> [file.c:131 util_file_exists] path "/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile"
+<libpmemobj>: <4> [file.c:165 get_file_type_internal] not a character device
+<libpmemobj>: <3> [file.c:551 util_file_open] path "/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile" size 0x7fff1dc60388 minsize 0 flags 0
+<libpmemobj>: <3> [file.c:258 util_file_get_size] path "/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile"
+<libpmemobj>: <3> [file.c:223 util_file_get_type] path "/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile"
+<libpmemobj>: <3> [file.c:131 util_file_exists] path "/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile"
+<libpmemobj>: <4> [file.c:165 get_file_type_internal] not a character device
+<libpmemobj>: <4> [file.c:276 util_file_get_size] file length 8388608
+<libpmemobj>: <4> [file.c:591 util_file_open] actual file size 8388608
+<libpmemobj>: <4> [set.c:2151 util_poolset_create_set] not a pool set header
+<libpmemobj>: <3> [set.c:1700 util_poolset_single] path /mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile filesize 8388608 create 0
+<libpmemobj>: <3> [file.c:223 util_file_get_type] path "/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile"
+<libpmemobj>: <3> [file.c:131 util_file_exists] path "/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile"
+<libpmemobj>: <4> [file.c:165 get_file_type_internal] not a character device
+<libpmemobj>: <3> [set.c:3834 util_read_compat_features] set 0x1781bb0 pcompat_features 0x7fff1dc603f0
+<libpmemobj>: <3> [set.c:1778 util_part_open] part 0x1781cb8 minsize 0 create 0
+<libpmemobj>: <3> [file.c:131 util_file_exists] path "/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile"
+<libpmemobj>: <3> [file.c:551 util_file_open] path "/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile" size 0x7fff1dc60360 minsize 0 flags 2
+<libpmemobj>: <3> [file.c:258 util_file_get_size] path "/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile"
+<libpmemobj>: <3> [file.c:223 util_file_get_type] path "/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile"
+<libpmemobj>: <3> [file.c:131 util_file_exists] path "/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile"
+<libpmemobj>: <4> [file.c:165 get_file_type_internal] not a character device
+<libpmemobj>: <4> [file.c:276 util_file_get_size] file length 8388608
+<libpmemobj>: <4> [file.c:591 util_file_open] actual file size 8388608
+<libpmemobj>: <3> [set.c:363 util_map_hdr] part 0x1781cb8 flags 1
+<libpmemobj>: <4> [mmap_posix.c:216 util_map_sync] mmap with MAP_SYNC not supported
+<libpmemobj>: <4> [set.c:422 util_unmap_hdr] munmap: addr 0x7f653de24000 size 4096
+<libpmemobj>: <3> [set.c:1823 util_part_fdclose] part 0x1781cb8
+<libpmemobj>: <3> [set.c:1993 util_poolset_files_local] set 0x1781bb0 minpartsize 2097152 create 0
+<libpmemobj>: <3> [set.c:1778 util_part_open] part 0x1781cb8 minsize 2097152 create 0
+<libpmemobj>: <3> [file.c:131 util_file_exists] path "/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile"
+<libpmemobj>: <3> [file.c:551 util_file_open] path "/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile" size 0x7fff1dc60360 minsize 2097152 flags 2
+<libpmemobj>: <3> [file.c:258 util_file_get_size] path "/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile"
+<libpmemobj>: <3> [file.c:223 util_file_get_type] path "/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile"
+<libpmemobj>: <3> [file.c:131 util_file_exists] path "/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile"
+<libpmemobj>: <4> [file.c:165 get_file_type_internal] not a character device
+<libpmemobj>: <4> [file.c:276 util_file_get_size] file length 8388608
+<libpmemobj>: <4> [file.c:591 util_file_open] actual file size 8388608
+<libpmemobj>: <3> [set.c:3531 util_replica_open] set 0x1781bb0 repidx 0 flags 1
+<libpmemobj>: <3> [set.c:3351 util_replica_open_local] set 0x1781bb0 repidx 0 flags 1
+<libpmemobj>: <3> [mmap_posix.c:153 util_map_hint] len 8388608 req_align 0
+<libpmemobj>: <4> [mmap_posix.c:176 util_map_hint] system choice 0x7f653baaf000
+<libpmemobj>: <4> [mmap_posix.c:181 util_map_hint] hint 0x7f653bc00000
+<libpmemobj>: <3> [set.c:439 util_map_part] part 0x1781cb8 addr 0x7f653bc00000 size 8388608 offset 0 flags 1
+<libpmemobj>: <4> [mmap_posix.c:216 util_map_sync] mmap with MAP_SYNC not supported
+<libpmemobj>: <3> [set.c:363 util_map_hdr] part 0x1781cb8 flags 1
+<libpmemobj>: <4> [mmap_posix.c:216 util_map_sync] mmap with MAP_SYNC not supported
+<libpmemobj>: <3> [set.c:1129 util_replica_check_map_sync] set 0x1781bb0 repidx 0
+<libpmemobj>: <3> [set.c:3472 util_replica_open_local] replica addr 0x7f653bc00000
+<libpmemobj>: <3> [set.c:3669 util_replica_check] set 0x1781bb0 attr 0x7f653d9ed780
+<libpmemobj>: <3> [set.c:2323 util_header_check] set 0x1781bb0 repidx 0 partidx 0 attr 0x7f653d9ed780
+<libpmemobj>: <3> [pool_hdr.c:183 util_feature_check] hdrp 0x7fff1dc5f300 features {incompat 0x7 ro_compat 0 compat 0}
+<libpmemobj>: <3> [set.c:2389 util_header_check] valid header, signature "PMEMOBJ"
+<libpmemobj>: <3> [set.c:2197 util_poolset_check_header_options] set 0x1781bb0, incompat 0x2
+<libpmemobj>: <3> [set.c:3644 util_unmap_all_hdrs] set 0x1781bb0
+<libpmemobj>: <4> [set.c:422 util_unmap_hdr] munmap: addr 0x7f653de24000 size 4096
+<libpmemobj>: <3> [obj.c:1017 obj_replica_init_local] rep 0x7f653bc00000 is_pmem 1 resvsize 8388608
+<libpmemobj>: <3> [obj.c:962 obj_descr_check] pop 0x7f653bc00000 layout nested_test poolsize 8388608
+<libpmemobj>: <3> [obj.c:1579 obj_check_basic] pop 0x7f653bc00000 mapped_size 8388608
+<libpmemobj>: <3> [obj.c:1479 obj_check_basic_local] pop 0x7f653bc00000 mapped_size 8388608
+<libpmemobj>: <3> [obj.c:1196 obj_runtime_init] pop 0x7f653bc00000 rdonly 0 boot 1
+<libpmemobj>: <3> [obj.c:853 obj_runtime_init_common] pop 0x7f653bc00000
+<libpmemobj>: <4> [heap.c:963 heap_get_procs] creating 4 arenas
+<libpmemobj>: <3> [obj.c:236 obj_pool_init] 
+<libpmemobj>: <3> [obj.c:183 obj_ctl_init_and_load] pop 0x7f653bc00000
+<libpmemobj>: <3> [mmap.c:277 util_range_none] addr 0x7f653bc00000 len 4096
+<libpmemobj>: <3> [set.c:705 util_poolset_fdclose_always] set 0x1781bb0
+<libpmemobj>: <3> [set.c:1823 util_part_fdclose] part 0x1781cb8
+<libpmemobj>: <3> [obj.c:1790 obj_open_common] pop 0x7f653bc00000
+<libpmemobj>: <3> [obj.c:2896 pmemobj_root] pop 0x7f653bc00000 size 12
+<libpmemobj>: <3> [obj.c:2853 pmemobj_root_construct] pop 0x7f653bc00000 size 12 constructor (nil) args (nil)
+<libpmemobj>: <3> [sync.c:225 pmemobj_mutex_lock] pop 0x7f653bc00000 mutex 0x7f653bc01b88
+<libpmemobj>: <3> [obj.c:2100 pmemobj_pool_by_ptr] addr 0x7f653bc01b88
+<libpmemobj>: <3> [sync.c:326 pmemobj_mutex_unlock] pop 0x7f653bc00000 mutex 0x7f653bc01b88
+<libpmemobj>: <3> [obj.c:2100 pmemobj_pool_by_ptr] addr 0x7f653bc01b88
+<libpmemobj>: <3> [obj.c:2085 pmemobj_pool_by_oid] oid.off 0x00000000003c0550
+<libpmemobj>: <3> [obj.c:1954 pmemobj_close] pop 0x7f653bc00000
+<libpmemobj>: <3> [obj.c:1932 obj_pool_cleanup] pop 0x7f653bc00000
+<libpmemobj>: <3> [obj.c:1891 obj_pool_lock_cleanup] pop 0x7f653bc00000
+<libpmemobj>: <3> [obj.c:1865 obj_replicas_cleanup] set 0x1781bb0
+<libpmemobj>: <3> [set.c:628 util_poolset_close] set 0x1781bb0 del 0
+<libpmemobj>: <3> [set.c:2871 util_replica_close] set 0x1781bb0 repidx 0
+<libpmemobj>: <3> [set.c:482 util_unmap_part] part 0x1781cb8
+<libpmemobj>: <4> [set.c:485 util_unmap_part] munmap: addr 0x7f653bc00000 size 8388608
+<libpmemobj>: <3> [set.c:520 util_poolset_free] set 0x1781bb0
+<libpmemobj>: <3> [libpmemobj.c:65 libpmemobj_fini] 
+<libpmemobj>: <3> [obj.c:327 obj_fini] 
+<libpmemobj>: <3> [set.c:138 util_remote_fini] 
+<libpmemobj>: <3> [set.c:193 util_remote_unload] 
+<libpmemobj>: <3> [mmap.c:100 util_mmap_fini] 

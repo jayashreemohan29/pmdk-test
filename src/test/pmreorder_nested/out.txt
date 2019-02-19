@@ -1,0 +1,24 @@
+pmreorder_nested/TEST4: SETUP (check/pmem/debug/pmemcheck)
+Creating obj pool ...
+./test_nested_tx p nested_test /mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile
+pmreorder_nested/TEST4: START: obj_tx_flow
+ ./test_nested_tx p nested_test /mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile
+
+ FIle is /mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile
+
+ Layout is nested_test
+
+ Creating object pool
+Done creating poolpmreorder_nested/TEST4: DONE
+Creating store log ...
+pmreorder_nested/TEST4: START: obj_tx_flow
+ ./test_nested_tx b nested_test /mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile
+
+ FIle is /mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile
+
+ Layout is nested_test
+
+Perform Transaction abort
+On commit tx values are a:1, b1, C:1pmreorder_nested/TEST4: DONE
+Running consistency check ...
+pmreorder_nested/TEST4: PASS			[05.147 s]

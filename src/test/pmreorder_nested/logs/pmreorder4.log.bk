@@ -1,0 +1,410 @@
+DEBUG:pmreorder:
+-------Initializing operations begin-------
+DEBUG:pmreorder:==13901== START
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:REGISTER_FILE;/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile;0x4027000;0x1000;0x0
+DEBUG:pmreorder:REGISTER_FILE;/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile;0x6400000;0x800000;0x0
+DEBUG:pmreorder:REGISTER_FILE;/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile;0x6400000;0x800000;0x0
+DEBUG:pmreorder:REGISTER_FILE;/mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile;0x4027000;0x1000;0x0
+DEBUG:pmreorder:STORE;0x6401808;0x4;0x8;0x4C657BB: obj_runtime_init (obj.c:1200);0x4C6718D: obj_open_common (obj.c:1778)
+DEBUG:pmreorder:FLUSH;0x6401800;0x40
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:STORE;0x6401818;0x0;0x8;0x4C64636: obj_runtime_init_common (obj.c:865);0x4C65B19: obj_runtime_init (obj.c:1235)
+DEBUG:pmreorder:FLUSH;0x6401800;0x40
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:WORKLOAD.BEGIN
+DEBUG:pmreorder:TX1.BEGIN
+DEBUG:pmreorder:STORE;0x6402400;0xc0000000003c0550;0x8;0x4EB95CD: memmove_movnt_sse2_clflush (emmintrin.h:1465);0x4EA779B: memmove_nodrain_sse2_clflush (init.c:164)
+DEBUG:pmreorder:STORE;0x6402408;0x43c055abc03c055f;0x8;0x4EB95CD: memmove_movnt_sse2_clflush (emmintrin.h:1465);0x4EA779B: memmove_nodrain_sse2_clflush (init.c:164)
+DEBUG:pmreorder:STORE;0x6402410;0xc;0x8;0x4EB9601: memmove_movnt_sse2_clflush (emmintrin.h:1465);0x4EA779B: memmove_nodrain_sse2_clflush (init.c:164)
+DEBUG:pmreorder:STORE;0x6402418;0x100000001;0x8;0x4EB9601: memmove_movnt_sse2_clflush (emmintrin.h:1465);0x4EA779B: memmove_nodrain_sse2_clflush (init.c:164)
+DEBUG:pmreorder:STORE;0x6402420;0x1;0x8;0x4EB9635: memmove_movnt_sse2_clflush (emmintrin.h:1465);0x4EA779B: memmove_nodrain_sse2_clflush (init.c:164)
+DEBUG:pmreorder:STORE;0x6402428;0x0;0x8;0x4EB9635: memmove_movnt_sse2_clflush (emmintrin.h:1465);0x4EA779B: memmove_nodrain_sse2_clflush (init.c:164)
+DEBUG:pmreorder:STORE;0x6402430;0x0;0x8;0x4EB9669: memmove_movnt_sse2_clflush (emmintrin.h:1465);0x4EA779B: memmove_nodrain_sse2_clflush (init.c:164)
+DEBUG:pmreorder:STORE;0x6402438;0x0;0x8;0x4EB9669: memmove_movnt_sse2_clflush (emmintrin.h:1465);0x4EA779B: memmove_nodrain_sse2_clflush (init.c:164)
+DEBUG:pmreorder:FLUSH;0x6402400;0x40
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:STORE;0x67c0550;0x2;0x4;0x4065E8: do_tx_macro_abort_nested_main (test_nested_tx.c:177);0x406FC4: main (test_nested_tx.c:299)
+DEBUG:pmreorder:STORE;0x67c0554;0x2;0x4;0x406612: do_tx_macro_abort_nested_main (test_nested_tx.c:178);0x406FC4: main (test_nested_tx.c:299)
+DEBUG:pmreorder:STORE;0x67c0558;0x2;0x4;0x40663D: do_tx_macro_abort_nested_main (test_nested_tx.c:179);0x406FC4: main (test_nested_tx.c:299)
+DEBUG:pmreorder:STORE;0x67c0558;0x3;0x4;0x406700: do_tx_macro_abort_nested_main (test_nested_tx.c:182);0x406FC4: main (test_nested_tx.c:299)
+DEBUG:pmreorder:STORE;0x67c0550;0x100000001;0x8;0x4EE0EF7: memmove_mov_sse2_clflush (memcpy_sse2.h:92);0x4EA77E7: memmove_nodrain_sse2_clflush (init.c:164)
+DEBUG:pmreorder:STORE;0x67c0554;0x100000001;0x8;0x4EE0F16: memmove_mov_sse2_clflush (memcpy_sse2.h:93);0x4EA77E7: memmove_nodrain_sse2_clflush (init.c:164)
+DEBUG:pmreorder:FLUSH;0x67c0540;0x40
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:STORE;0x6402400;0x0;0x8;0x4ED013F: memset_movnt_sse2_clflush (emmintrin.h:1465);0x4EA7B15: memset_nodrain_sse2_clflush (init.c:169)
+DEBUG:pmreorder:STORE;0x6402408;0x0;0x8;0x4ED013F: memset_movnt_sse2_clflush (emmintrin.h:1465);0x4EA7B15: memset_nodrain_sse2_clflush (init.c:169)
+DEBUG:pmreorder:STORE;0x6402410;0x0;0x8;0x4ED0173: memset_movnt_sse2_clflush (emmintrin.h:1465);0x4EA7B15: memset_nodrain_sse2_clflush (init.c:169)
+DEBUG:pmreorder:STORE;0x6402418;0x0;0x8;0x4ED0173: memset_movnt_sse2_clflush (emmintrin.h:1465);0x4EA7B15: memset_nodrain_sse2_clflush (init.c:169)
+DEBUG:pmreorder:STORE;0x6402420;0x0;0x8;0x4ED01A7: memset_movnt_sse2_clflush (emmintrin.h:1465);0x4EA7B15: memset_nodrain_sse2_clflush (init.c:169)
+DEBUG:pmreorder:STORE;0x6402428;0x0;0x8;0x4ED01A7: memset_movnt_sse2_clflush (emmintrin.h:1465);0x4EA7B15: memset_nodrain_sse2_clflush (init.c:169)
+DEBUG:pmreorder:STORE;0x6402430;0x0;0x8;0x4ED01DB: memset_movnt_sse2_clflush (emmintrin.h:1465);0x4EA7B15: memset_nodrain_sse2_clflush (init.c:169)
+DEBUG:pmreorder:STORE;0x6402438;0x0;0x8;0x4ED01DB: memset_movnt_sse2_clflush (emmintrin.h:1465);0x4EA7B15: memset_nodrain_sse2_clflush (init.c:169)
+DEBUG:pmreorder:FLUSH;0x6402400;0x40
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:TX1.END
+DEBUG:pmreorder:WORKLOAD.END
+DEBUG:pmreorder:FLUSH;0x6401800;0x40
+DEBUG:pmreorder:FENCE
+DEBUG:pmreorder:STOP
+
+DEBUG:pmreorder:
+-------Initializing operations end-------
+DEBUG:pmreorder:
+
+In Replay State, store ops since last FLUSH : 
+DEBUG:pmreorder:addr: 0x6401808 size 8 value b'\x04\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:
+
+In Replay State, store ops since last FLUSH : 
+DEBUG:pmreorder:addr: 0x6401818 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:
+
+In Replay State, store ops since last FLUSH : 
+DEBUG:pmreorder:addr: 0x6402400 size 8 value b'P\x05<\x00\x00\x00\x00\xc0'
+DEBUG:pmreorder:addr: 0x6402408 size 8 value b'_\x05<\xc0\xabU\xc0C'
+DEBUG:pmreorder:addr: 0x6402410 size 8 value b'\x0c\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402418 size 8 value b'\x01\x00\x00\x00\x01\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402420 size 8 value b'\x01\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402428 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402430 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402438 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:On barrier
+DEBUG:pmreorder:
+
+-----Testing the following sequence-----
+DEBUG:pmreorder:
+----Checking consistency----
+DEBUG:pmreorder:
+
+-----Testing the following sequence-----
+DEBUG:pmreorder:addr: 0x6402400 size 8 value b'P\x05<\x00\x00\x00\x00\xc0'
+DEBUG:pmreorder:
+----Checking consistency----
+DEBUG:pmreorder:
+
+-----Testing the following sequence-----
+DEBUG:pmreorder:addr: 0x6402400 size 8 value b'P\x05<\x00\x00\x00\x00\xc0'
+DEBUG:pmreorder:addr: 0x6402408 size 8 value b'_\x05<\xc0\xabU\xc0C'
+DEBUG:pmreorder:
+----Checking consistency----
+DEBUG:pmreorder:
+
+-----Testing the following sequence-----
+DEBUG:pmreorder:addr: 0x6402400 size 8 value b'P\x05<\x00\x00\x00\x00\xc0'
+DEBUG:pmreorder:addr: 0x6402408 size 8 value b'_\x05<\xc0\xabU\xc0C'
+DEBUG:pmreorder:addr: 0x6402410 size 8 value b'\x0c\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:
+----Checking consistency----
+DEBUG:pmreorder:
+
+-----Testing the following sequence-----
+DEBUG:pmreorder:addr: 0x6402400 size 8 value b'P\x05<\x00\x00\x00\x00\xc0'
+DEBUG:pmreorder:addr: 0x6402408 size 8 value b'_\x05<\xc0\xabU\xc0C'
+DEBUG:pmreorder:addr: 0x6402410 size 8 value b'\x0c\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402418 size 8 value b'\x01\x00\x00\x00\x01\x00\x00\x00'
+DEBUG:pmreorder:
+----Checking consistency----
+DEBUG:pmreorder:
+
+-----Testing the following sequence-----
+DEBUG:pmreorder:addr: 0x6402400 size 8 value b'P\x05<\x00\x00\x00\x00\xc0'
+DEBUG:pmreorder:addr: 0x6402408 size 8 value b'_\x05<\xc0\xabU\xc0C'
+DEBUG:pmreorder:addr: 0x6402410 size 8 value b'\x0c\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402418 size 8 value b'\x01\x00\x00\x00\x01\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402420 size 8 value b'\x01\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:
+----Checking consistency----
+DEBUG:pmreorder:
+
+-----Testing the following sequence-----
+DEBUG:pmreorder:addr: 0x6402400 size 8 value b'P\x05<\x00\x00\x00\x00\xc0'
+DEBUG:pmreorder:addr: 0x6402408 size 8 value b'_\x05<\xc0\xabU\xc0C'
+DEBUG:pmreorder:addr: 0x6402410 size 8 value b'\x0c\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402418 size 8 value b'\x01\x00\x00\x00\x01\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402420 size 8 value b'\x01\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402428 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:
+----Checking consistency----
+DEBUG:pmreorder:
+
+-----Testing the following sequence-----
+DEBUG:pmreorder:addr: 0x6402400 size 8 value b'P\x05<\x00\x00\x00\x00\xc0'
+DEBUG:pmreorder:addr: 0x6402408 size 8 value b'_\x05<\xc0\xabU\xc0C'
+DEBUG:pmreorder:addr: 0x6402410 size 8 value b'\x0c\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402418 size 8 value b'\x01\x00\x00\x00\x01\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402420 size 8 value b'\x01\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402428 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402430 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:
+----Checking consistency----
+DEBUG:pmreorder:
+
+-----Testing the following sequence-----
+DEBUG:pmreorder:addr: 0x6402400 size 8 value b'P\x05<\x00\x00\x00\x00\xc0'
+DEBUG:pmreorder:addr: 0x6402408 size 8 value b'_\x05<\xc0\xabU\xc0C'
+DEBUG:pmreorder:addr: 0x6402410 size 8 value b'\x0c\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402418 size 8 value b'\x01\x00\x00\x00\x01\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402420 size 8 value b'\x01\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402428 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402430 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402438 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:
+----Checking consistency----
+DEBUG:pmreorder:
+
+In Replay State, store ops since last FLUSH : 
+DEBUG:pmreorder:addr: 0x67c0550 size 4 value b'\x02\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x67c0554 size 4 value b'\x02\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x67c0558 size 4 value b'\x02\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x67c0558 size 4 value b'\x03\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x67c0550 size 8 value b'\x01\x00\x00\x00\x01\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x67c0554 size 8 value b'\x01\x00\x00\x00\x01\x00\x00\x00'
+DEBUG:pmreorder:On barrier
+DEBUG:pmreorder:
+
+-----Testing the following sequence-----
+DEBUG:pmreorder:
+----Checking consistency----
+DEBUG:pmreorder:
+
+-----Testing the following sequence-----
+DEBUG:pmreorder:addr: 0x67c0550 size 4 value b'\x02\x00\x00\x00'
+DEBUG:pmreorder:
+----Checking consistency----
+
+At this point, values are a:2, b1, C:1
+WARNING:pmreorder:File /mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile inconsistent
+WARNING:pmreorder:Call trace:
+Store [0]:
+    by	0x4065E8: do_tx_macro_abort_nested_main (test_nested_tx.c:177)
+    by	0x406FC4: main (test_nested_tx.c:299)
+
+DEBUG:pmreorder:
+
+-----Testing the following sequence-----
+DEBUG:pmreorder:addr: 0x67c0550 size 4 value b'\x02\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x67c0554 size 4 value b'\x02\x00\x00\x00'
+DEBUG:pmreorder:
+----Checking consistency----
+
+At this point, values are a:2, b2, C:1
+WARNING:pmreorder:File /mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile inconsistent
+WARNING:pmreorder:Call trace:
+Store [0]:
+    by	0x4065E8: do_tx_macro_abort_nested_main (test_nested_tx.c:177)
+    by	0x406FC4: main (test_nested_tx.c:299)
+Store [1]:
+    by	0x406612: do_tx_macro_abort_nested_main (test_nested_tx.c:178)
+    by	0x406FC4: main (test_nested_tx.c:299)
+
+DEBUG:pmreorder:
+
+-----Testing the following sequence-----
+DEBUG:pmreorder:addr: 0x67c0550 size 4 value b'\x02\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x67c0554 size 4 value b'\x02\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x67c0558 size 4 value b'\x02\x00\x00\x00'
+DEBUG:pmreorder:
+----Checking consistency----
+
+At this point, values are a:2, b2, C:2
+WARNING:pmreorder:File /mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile inconsistent
+WARNING:pmreorder:Call trace:
+Store [0]:
+    by	0x4065E8: do_tx_macro_abort_nested_main (test_nested_tx.c:177)
+    by	0x406FC4: main (test_nested_tx.c:299)
+Store [1]:
+    by	0x406612: do_tx_macro_abort_nested_main (test_nested_tx.c:178)
+    by	0x406FC4: main (test_nested_tx.c:299)
+Store [2]:
+    by	0x40663D: do_tx_macro_abort_nested_main (test_nested_tx.c:179)
+    by	0x406FC4: main (test_nested_tx.c:299)
+
+DEBUG:pmreorder:
+
+-----Testing the following sequence-----
+DEBUG:pmreorder:addr: 0x67c0550 size 4 value b'\x02\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x67c0554 size 4 value b'\x02\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x67c0558 size 4 value b'\x02\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x67c0558 size 4 value b'\x03\x00\x00\x00'
+DEBUG:pmreorder:
+----Checking consistency----
+
+At this point, values are a:2, b2, C:3
+WARNING:pmreorder:File /mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile inconsistent
+WARNING:pmreorder:Call trace:
+Store [0]:
+    by	0x4065E8: do_tx_macro_abort_nested_main (test_nested_tx.c:177)
+    by	0x406FC4: main (test_nested_tx.c:299)
+Store [1]:
+    by	0x406612: do_tx_macro_abort_nested_main (test_nested_tx.c:178)
+    by	0x406FC4: main (test_nested_tx.c:299)
+Store [2]:
+    by	0x40663D: do_tx_macro_abort_nested_main (test_nested_tx.c:179)
+    by	0x406FC4: main (test_nested_tx.c:299)
+Store [3]:
+    by	0x406700: do_tx_macro_abort_nested_main (test_nested_tx.c:182)
+    by	0x406FC4: main (test_nested_tx.c:299)
+
+DEBUG:pmreorder:
+
+-----Testing the following sequence-----
+DEBUG:pmreorder:addr: 0x67c0550 size 4 value b'\x02\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x67c0554 size 4 value b'\x02\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x67c0558 size 4 value b'\x02\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x67c0558 size 4 value b'\x03\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x67c0550 size 8 value b'\x01\x00\x00\x00\x01\x00\x00\x00'
+DEBUG:pmreorder:
+----Checking consistency----
+
+At this point, values are a:1, b1, C:3
+WARNING:pmreorder:File /mnt/pmem/pmdk/A/A/A/A/A/test_pmreorder_nested4/testfile inconsistent
+WARNING:pmreorder:Call trace:
+Store [0]:
+    by	0x4065E8: do_tx_macro_abort_nested_main (test_nested_tx.c:177)
+    by	0x406FC4: main (test_nested_tx.c:299)
+Store [1]:
+    by	0x406612: do_tx_macro_abort_nested_main (test_nested_tx.c:178)
+    by	0x406FC4: main (test_nested_tx.c:299)
+Store [2]:
+    by	0x40663D: do_tx_macro_abort_nested_main (test_nested_tx.c:179)
+    by	0x406FC4: main (test_nested_tx.c:299)
+Store [3]:
+    by	0x406700: do_tx_macro_abort_nested_main (test_nested_tx.c:182)
+    by	0x406FC4: main (test_nested_tx.c:299)
+Store [4]:
+    by	0x4EE0EF7: memmove_mov_sse2_clflush (memcpy_sse2.h:92)
+    by	0x4EA77E7: memmove_nodrain_sse2_clflush (init.c:164)
+
+DEBUG:pmreorder:
+
+-----Testing the following sequence-----
+DEBUG:pmreorder:addr: 0x67c0550 size 4 value b'\x02\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x67c0554 size 4 value b'\x02\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x67c0558 size 4 value b'\x02\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x67c0558 size 4 value b'\x03\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x67c0550 size 8 value b'\x01\x00\x00\x00\x01\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x67c0554 size 8 value b'\x01\x00\x00\x00\x01\x00\x00\x00'
+DEBUG:pmreorder:
+----Checking consistency----
+DEBUG:pmreorder:
+
+In Replay State, store ops since last FLUSH : 
+DEBUG:pmreorder:addr: 0x6402400 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402408 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402410 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402418 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402420 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402428 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402430 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402438 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:On barrier
+DEBUG:pmreorder:
+
+-----Testing the following sequence-----
+DEBUG:pmreorder:
+----Checking consistency----
+DEBUG:pmreorder:
+
+-----Testing the following sequence-----
+DEBUG:pmreorder:addr: 0x6402400 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:
+----Checking consistency----
+DEBUG:pmreorder:
+
+-----Testing the following sequence-----
+DEBUG:pmreorder:addr: 0x6402400 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402408 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:
+----Checking consistency----
+DEBUG:pmreorder:
+
+-----Testing the following sequence-----
+DEBUG:pmreorder:addr: 0x6402400 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402408 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402410 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:
+----Checking consistency----
+DEBUG:pmreorder:
+
+-----Testing the following sequence-----
+DEBUG:pmreorder:addr: 0x6402400 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402408 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402410 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402418 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:
+----Checking consistency----
+DEBUG:pmreorder:
+
+-----Testing the following sequence-----
+DEBUG:pmreorder:addr: 0x6402400 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402408 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402410 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402418 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402420 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:
+----Checking consistency----
+DEBUG:pmreorder:
+
+-----Testing the following sequence-----
+DEBUG:pmreorder:addr: 0x6402400 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402408 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402410 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402418 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402420 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402428 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:
+----Checking consistency----
+DEBUG:pmreorder:
+
+-----Testing the following sequence-----
+DEBUG:pmreorder:addr: 0x6402400 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402408 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402410 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402418 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402420 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402428 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402430 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:
+----Checking consistency----
+DEBUG:pmreorder:
+
+-----Testing the following sequence-----
+DEBUG:pmreorder:addr: 0x6402400 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402408 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402410 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402418 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402420 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402428 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402430 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:addr: 0x6402438 size 8 value b'\x00\x00\x00\x00\x00\x00\x00\x00'
+DEBUG:pmreorder:
+----Checking consistency----

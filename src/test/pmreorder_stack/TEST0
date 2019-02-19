@@ -54,7 +54,10 @@ BIN="./pmreorder_stack$EXESUFFIX"
 PMEMCHECK_CMD="$BIN w $DIR/testfile"
 PMREORDER_CMD="$BIN c"
 
+echo "Creating store log..."
 pmreorder_create_store_log $DIR/testfile "$PMEMCHECK_CMD"
+
+echo "Now testing with pmreorder..."
 pmreorder_expect_failure NoReorderNoCheck pmreorder0.conf "$PMREORDER_CMD"
 
 check

@@ -83,6 +83,8 @@ write_inconsistent(struct three_field *structp)
 	structp->second_field = 1;
 	structp->third_field = 1;
 	pmem_persist(structp, sizeof(*structp));
+	VALGRIND_EMIT_LOG("PMREORDER_CHECKPOINT.BEGIN");
+	VALGRIND_EMIT_LOG("PMREORDER_CHECKPOINT.END");
 }
 
 /*
